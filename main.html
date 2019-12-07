@@ -1,0 +1,88 @@
+<!DOCTYPE html>	
+
+<html>
+<head>
+<meta charset="UTF-8">
+<!--
+<meta name="author" content="jason_wu">//作者
+
+-->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title></title>
+
+<!--<link href="css/bootstrap.min.css" rel="stylesheet">    -->   
+
+<style>
+</style>
+
+</head>
+
+<body onload="init()">
+
+<div id="mainpage" class="container" style="width:100%;height:200vw;" >
+
+<div id="mainmodel1" class="model1" style="width:100%;height:50vw;background-image:url('img/la.jpg');background-color: gray;background-size:cover;" >
+</div>
+
+<div id="mainpage2" class="Rectangle-Copy-4" style="100%;height:50vw;" >
+</div>
+
+<div id="mainpage3" class="Rectangle-Copy-5" style="width:100%;height:50vw;" >
+</div>
+
+<div id="mainpage4" class="Rectangle-5" style="100%;height:50vw;">
+</div>
+
+</div> <!--  container -->
+
+
+<script type="text/javascript">
+
+function init(){
+
+$( "#mainmodel1" ).load("navigation.html");
+$( "#mainpage4" ).load("footer.html");
+$( "#login_model" ).load("footer.html");
+
+
+}
+
+function showdropdown(){
+
+if($("#md").css("display")=="none"){
+$("#md").show();
+}
+else{$("#md").hide();}
+}
+
+function openLogin(){
+$("#id01").show();
+$("#loginform").show();
+$("#signupform").hide();
+$("#wcform").hide();
+}
+
+function openSignUp(){
+$("#loginform").hide();
+$("#signupform").show();
+}
+
+function closeModal(){
+$("#id01").hide();
+}
+
+function signup(){
+$("#signupform").hide();
+$("#wcform").show();
+}
+
+
+</script>
+<script src="js/angularjs-1.6.4.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/jquery-3.2.1.min.js"></script>
+
+</body>
+
+</html>
